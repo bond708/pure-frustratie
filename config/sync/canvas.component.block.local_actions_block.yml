@@ -1,0 +1,29 @@
+uuid: 88c63f4e-2669-4b11-93fb-cb4ab5db2b51
+langcode: en
+status: false
+dependencies: {  }
+active_version: b43ce2caefa583ba
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: local_actions_block
+        label: 'Primaire beheeracties'
+        label_display: '0'
+        provider: core
+    fallback_metadata:
+      slot_definitions: null
+  29753123eb31b8ab:
+    settings:
+      default_settings:
+        id: local_actions_block
+        label: 'Primary admin actions'
+        label_display: '0'
+        provider: core
+    fallback_metadata:
+      slot_definitions: null
+label: 'Primaire beheeracties'
+id: block.local_actions_block
+provider: core
+source: block
+source_local_id: local_actions_block

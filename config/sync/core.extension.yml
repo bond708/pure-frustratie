@@ -1,20 +1,80 @@
 _core:
   default_config_hash: 4GIX5Esnc_umpXUBj4IIocRX7Mt5fPhm4AgXfE3E56E
 module:
+  autosave_form: 0
   block: 0
+  bpmn_io: 0
+  canvas: 0
+  checklistapi: 0
+  ckeditor5: 0
+  content_moderation: 0
+  contextual: 0
+  crop: 0
+  datetime: 0
   dblog: 0
+  drupal_cms_helper: 0
   dynamic_page_cache: 0
+  easy_breadcrumb: 0
+  eca: 0
+  eca_base: 0
+  eca_config: 0
+  eca_content: 0
+  eca_misc: 0
+  eca_render: 0
+  eca_ui: 0
+  eca_user: 0
+  editor: 0
   field: 0
+  field_group: 0
+  field_ui: 0
+  file: 0
   filter: 0
+  focal_point: 0
+  image: 0
+  language: 0
+  layout_builder: 0
+  layout_discovery: 0
+  link: 0
+  linkit: 0
+  locale: 0
+  media: 0
+  media_library: 0
+  menu_link_content: 0
+  menu_ui: 0
+  metatag: 0
+  metatag_open_graph: 0
+  metatag_twitter_cards: 0
+  modeler_api: 0
   mysql: 0
   node: 0
+  options: 0
   page_cache: 0
+  path: 0
   path_alias: 0
+  redirect: 0
+  redirect_404: 0
+  scheduler: 0
+  scheduler_content_moderation_integration: 0
+  seo_checklist: 0
+  simple_sitemap: 0
   system: 0
+  tagify: 0
+  tagify_user_list: 0
+  taxonomy: 0
   text: 0
+  token: 0
+  token_or: 0
+  trash: 0
   update: 0
   user: 0
+  workflows: 0
+  yoast_seo: 0
+  pathauto: 1
+  views: 10
   minimal: 1000
 theme:
   stark: 0
+  claro: 0
+  gin: 0
+  canvas_stark: 0
 profile: minimal

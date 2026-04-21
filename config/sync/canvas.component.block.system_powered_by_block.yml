@@ -1,0 +1,31 @@
+uuid: 12640289-f3c3-4a72-aca0-0d62367cc851
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+active_version: 889341e63004cc6b
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: system_powered_by_block
+        label: 'Gebouwd met Drupal'
+        label_display: '0'
+        provider: system
+    fallback_metadata:
+      slot_definitions: null
+  fcc4b9a4f6d6de35:
+    settings:
+      default_settings:
+        id: system_powered_by_block
+        label: 'Powered by Drupal'
+        label_display: '0'
+        provider: system
+    fallback_metadata:
+      slot_definitions: null
+label: 'Gebouwd met Drupal'
+id: block.system_powered_by_block
+provider: system
+source: block
+source_local_id: system_powered_by_block

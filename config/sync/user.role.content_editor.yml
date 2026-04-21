@@ -1,0 +1,56 @@
+uuid: 4f51f34e-647e-4995-959f-4e3edf376ef1
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.content_format
+    - media.type.image
+    - node.type.page
+    - workflows.workflow.basic_editorial
+  module:
+    - canvas
+    - content_moderation
+    - filter
+    - media
+    - node
+    - path
+    - redirect
+    - scheduler
+    - system
+    - trash
+_core:
+  default_config_hash: g-zSnaBXJnH7VoimReFb6KcLjIgHCU-hisiShtZ9hjQ
+id: content_editor
+label: 'Content editor'
+weight: 2
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access media overview'
+  - 'access trash'
+  - 'administer menu'
+  - 'administer redirects'
+  - 'administer url aliases'
+  - 'create canvas_page'
+  - 'create image media'
+  - 'create page content'
+  - 'create url aliases'
+  - 'delete any image media'
+  - 'delete any page content'
+  - 'delete canvas_page'
+  - 'delete page revisions'
+  - 'edit any image media'
+  - 'edit any page content'
+  - 'edit canvas_page'
+  - 'revert all revisions'
+  - 'schedule publishing of nodes'
+  - 'use basic_editorial transition create_new_draft'
+  - 'use basic_editorial transition publish'
+  - 'use basic_editorial transition unpublish'
+  - 'use text format content_format'
+  - 'view all revisions'
+  - 'view any unpublished content'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view scheduled content'

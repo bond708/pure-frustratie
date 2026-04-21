@@ -1,0 +1,31 @@
+uuid: d949fc5f-74c3-4349-887f-27ef05ec9347
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+active_version: 3ccfd496b0dc9b2d
+versioned_properties:
+  active:
+    settings:
+      default_settings:
+        id: 'language_block:language_interface'
+        label: Taalkeuze
+        label_display: '0'
+        provider: language
+    fallback_metadata:
+      slot_definitions: null
+  f84882f46cbe4bd5:
+    settings:
+      default_settings:
+        id: 'language_block:language_interface'
+        label: 'Language switcher'
+        label_display: '0'
+        provider: language
+    fallback_metadata:
+      slot_definitions: null
+label: Taalkeuze
+id: block.language_block.language_interface
+provider: language
+source: block
+source_local_id: 'language_block:language_interface'
