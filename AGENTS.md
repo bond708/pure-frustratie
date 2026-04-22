@@ -5,11 +5,36 @@ Production runs on TransIP shared hosting under the `dvborgercompagnienl` accoun
 
 ## Project facts
 
-- Drupal core: 11 (installed with `minimal` profile, with `block` enabled)
+- Drupal core: 11 (installed with `standard` profile)
+- Admin theme: Gin
+- Frontend theme: Olivero (standaard Drupal)
 - PHP platform: pinned to 8.3 in `composer.json` (TransIP server runs PHP 8.3)
 - Config sync directory: `config/sync/` (set in `web/sites/default/settings.php`)
 - Drush is in `require` (not `require-dev`) so it is available on the production server
 - GitHub repo: https://github.com/bond708/pure-frustratie
+
+## Contrib modules
+
+Installed contrib modules (all in `web/modules/contrib/`):
+
+- `admin_toolbar` + `admin_toolbar_tools` — dropdown admin menu
+- `easy_breadcrumb` — breadcrumb navigation
+- `field_group` — group fields in forms and displays
+- `gin_login` + `gin_toolbar` — Gin admin theme extensions
+- `google_tag` — Google Tag Manager / Analytics integration
+- `honeypot` — spam protection for forms
+- `linkit` — rich link picker in WYSIWYG
+- `media_file_delete` — delete files when media entities are deleted
+- `menu_link_attributes` — extra attributes on menu links
+- `metatag` — SEO meta tags
+- `pathauto` — automatic URL aliases (requires `token`)
+- `redirect` — 301 redirects on URL changes
+- `scheduler` — schedule content publish/unpublish
+- `search_api` — extensible search framework
+- `simple_sitemap` — XML sitemap
+- `svg_image` — SVG support in image fields
+- `token` — token system (dependency for pathauto)
+- `webform` + `webform_ui` — form builder
 
 ## Local environment (DDEV)
 

@@ -1,5 +1,4 @@
 # Dependencies managed by Composer.
-/recipes
 /vendor
 /web/core
 /web/libraries
