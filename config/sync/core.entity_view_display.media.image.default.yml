@@ -1,4 +1,4 @@
-uuid: b754accc-b5ee-48b9-ab89-2c1e23e57d44
+uuid: 9035e1ae-aa8c-4d46-953e-7fe231365dcd
 langcode: en
 status: true
 dependencies:
@@ -7,9 +7,9 @@ dependencies:
     - image.style.large
     - media.type.image
   module:
-    - image
+    - svg_image
 _core:
-  default_config_hash: t2YAVeSqMs3Gpnfp_plCnQ2TsoC0u57VCUWl8e2jMMM
+  default_config_hash: 73xaTNkI5J6sfFcBmNYeuk070X3mQS_iwwWaPYyfG2M
 id: media.image.default
 targetEntityType: media
 bundle: image
@@ -19,8 +19,8 @@ content:
     type: image
     label: visually_hidden
     settings:
-      image_link: ''
       image_style: large
+      image_link: ''
       image_loading:
         attribute: lazy
     third_party_settings: {  }
@@ -28,7 +28,7 @@ content:
     region: content
 hidden:
   created: true
-  langcode: true
   name: true
+  search_api_excerpt: true
   thumbnail: true
   uid: true

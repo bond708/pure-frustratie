@@ -1,15 +1,15 @@
 _core:
-  default_config_hash: HlN7eAN2N4JIHsYv56V4E7sqC9bS609KwvGFjyD_mgk
+  default_config_hash: ijfbzDTN4CbE7Sr-6ubWzy_t1vH4OtU1doNCLssVz-4
 langcode: en
-uuid: 93ca6ec0-ab1b-4935-a4da-ff945409134e
+uuid: 9283e4da-af67-4950-934f-4969be8a0812
 name: 'Pure Frustratie'
 mail: admin@example.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /user/login
+  front: /node
 admin_compact_mode: false
 weight_select_max: 100
-default_langcode: nl
+default_langcode: en
 mail_notification: null

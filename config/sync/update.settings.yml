@@ -9,5 +9,5 @@ fetch:
   timeout: 30
 notification:
   emails:
-    - info@pure-frustratie.nl
+    - g.brouwer@wowww.nl
   threshold: all

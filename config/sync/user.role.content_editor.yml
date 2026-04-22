@@ -1,25 +1,22 @@
-uuid: 4f51f34e-647e-4995-959f-4e3edf376ef1
+uuid: 6b88c27c-9771-45c0-b072-b08e590135e3
 langcode: en
 status: true
 dependencies:
   config:
-    - filter.format.content_format
-    - media.type.image
+    - node.type.article
     - node.type.page
-    - workflows.workflow.basic_editorial
+    - taxonomy.vocabulary.tags
   module:
-    - canvas
-    - content_moderation
-    - filter
-    - media
+    - comment
+    - contextual
+    - file
     - node
     - path
-    - redirect
-    - scheduler
     - system
-    - trash
+    - taxonomy
+    - toolbar
 _core:
-  default_config_hash: g-zSnaBXJnH7VoimReFb6KcLjIgHCU-hisiShtZ9hjQ
+  default_config_hash: e_wG1u7SrGaJbY2-Szgbgl-c8T3kdirU3uTNq2c_QJQ
 id: content_editor
 label: 'Content editor'
 weight: 2
@@ -27,30 +24,24 @@ is_admin: false
 permissions:
   - 'access administration pages'
   - 'access content overview'
-  - 'access media overview'
-  - 'access trash'
-  - 'administer menu'
-  - 'administer redirects'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access toolbar'
   - 'administer url aliases'
-  - 'create canvas_page'
-  - 'create image media'
+  - 'create article content'
   - 'create page content'
+  - 'create terms in tags'
   - 'create url aliases'
-  - 'delete any image media'
-  - 'delete any page content'
-  - 'delete canvas_page'
+  - 'delete article revisions'
+  - 'delete own article content'
+  - 'delete own files'
+  - 'delete own page content'
   - 'delete page revisions'
-  - 'edit any image media'
-  - 'edit any page content'
-  - 'edit canvas_page'
+  - 'edit own article content'
+  - 'edit own comments'
+  - 'edit own page content'
+  - 'edit terms in tags'
   - 'revert all revisions'
-  - 'schedule publishing of nodes'
-  - 'use basic_editorial transition create_new_draft'
-  - 'use basic_editorial transition publish'
-  - 'use basic_editorial transition unpublish'
-  - 'use text format content_format'
   - 'view all revisions'
-  - 'view any unpublished content'
   - 'view own unpublished content'
-  - 'view own unpublished media'
-  - 'view scheduled content'
+  - 'view the administration theme'

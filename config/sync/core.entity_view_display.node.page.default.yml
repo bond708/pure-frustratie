@@ -1,46 +1,28 @@
-uuid: bdd2bd8f-d161-44fc-b587-f62bc993ee68
+uuid: 1d1aa49d-8d34-4c12-99f7-7bafc8badbf3
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.page.field_content
-    - field.field.node.page.field_description
-    - field.field.node.page.field_featured_image
-    - field.field.node.page.field_tags
+    - field.field.node.page.body
     - node.type.page
   module:
     - text
     - user
 _core:
-  default_config_hash: 2UDy2nPPDg5EY8ulLpNkZMsj2eMSzvNSkTis0oX0gZc
+  default_config_hash: M_Y8L5tfmhx7DR143E05YyZSpvgil6VFvqcfBWykalg
 id: node.page.default
 targetEntityType: node
 bundle: page
 mode: default
 content:
-  content_moderation_control:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 2
-    region: content
-  field_content:
+  body:
     type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 100
     region: content
-  field_featured_image:
-    type: entity_reference_entity_view
-    label: hidden
-    settings:
-      view_mode: hero
-      link: false
-    third_party_settings: {  }
-    weight: 1
+  links:
+    weight: 101
     region: content
-hidden:
-  field_description: true
-  field_tags: true
-  langcode: true
-  links: true
+hidden: {  }
