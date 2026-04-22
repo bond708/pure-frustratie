@@ -1,0 +1,56 @@
+@use '../config' as *;
+
+// Atom: input
+// BEM: .input, .input--error, .label, .label--required
+
+.label {
+  display: block;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-bold;
+  margin-block-end: $spacing-1;
+  color: $color-text;
+
+  &--required::after {
+    content: ' *';
+    color: $color-accent;
+  }
+}
+
+.input {
+  display: block;
+  width: 100%;
+  padding: $spacing-2 $spacing-3;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  color: $color-text;
+  background-color: $color-white;
+  border: 1px solid $color-border;
+  border-radius: $border-radius;
+  transition: border-color $transition-base, box-shadow $transition-base;
+
+  &:focus {
+    outline: none;
+    border-color: $color-accent;
+    box-shadow: 0 0 0 3px rgba($color-accent, 0.2);
+  }
+
+  // ── Modifiers ──────────────────────────────────────────────────────────────
+
+  &--error {
+    border-color: $color-accent;
+
+    &:focus {
+      box-shadow: 0 0 0 3px rgba($color-accent, 0.3);
+    }
+  }
+}
+
+.field-message {
+  display: block;
+  font-size: $font-size-sm;
+  margin-block-start: $spacing-1;
+
+  &--error {
+    color: $color-accent;
+  }
+}

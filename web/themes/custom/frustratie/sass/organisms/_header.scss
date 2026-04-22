@@ -1,0 +1,47 @@
+@use '../config' as *;
+
+// Organism: header
+// BEM: .header, .header__inner, .header__branding, .header__site-name, .header__nav
+
+.header {
+  background-color: $color-white;
+  border-block-end: 1px solid $color-border;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  // ── Elements ───────────────────────────────────────────────────────────────
+
+  &__inner {
+    @include container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $spacing-6;
+    padding-block: $spacing-4;
+  }
+
+  &__branding {
+    flex-shrink: 0;
+  }
+
+  &__site-name {
+    @include heading($font-size-xl);
+    margin: 0;
+
+    a {
+      color: $color-primary;
+      text-decoration: none;
+
+      &:hover {
+        color: $color-accent;
+      }
+    }
+  }
+
+  &__nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+}

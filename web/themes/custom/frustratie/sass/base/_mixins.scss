@@ -1,0 +1,51 @@
+@use 'variables' as *;
+
+// ─── Responsive ──────────────────────────────────────────────────────────────
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == 'sm' {
+    @media (min-width: #{$breakpoint-sm}) { @content; }
+  } @else if $breakpoint == 'md' {
+    @media (min-width: #{$breakpoint-md}) { @content; }
+  } @else if $breakpoint == 'lg' {
+    @media (min-width: #{$breakpoint-lg}) { @content; }
+  } @else if $breakpoint == 'xl' {
+    @media (min-width: #{$breakpoint-xl}) { @content; }
+  }
+}
+
+// ─── Layout ──────────────────────────────────────────────────────────────────
+
+@mixin container {
+  max-width: $container-max-width;
+  margin-inline: auto;
+  padding-inline: $container-padding;
+}
+
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+// ─── Typografie ───────────────────────────────────────────────────────────────
+
+@mixin heading($size) {
+  font-family: $font-family-heading;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-heading;
+  font-size: $size;
+}
+
+// ─── Interactie ──────────────────────────────────────────────────────────────
+
+@mixin focus-ring {
+  outline: 2px solid $color-accent;
+  outline-offset: 2px;
+}

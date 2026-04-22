@@ -1,0 +1,38 @@
+@use '../config' as *;
+@use 'sass:color';
+
+// Atom: link
+// BEM: .link, .link--muted, .link--plain
+
+.link {
+  color: $color-accent;
+  text-decoration: underline;
+  transition: color $transition-base;
+
+  &:hover,
+  &:focus {
+    color: color.adjust($color-accent, $lightness: -15%);
+  }
+
+  &:focus-visible {
+    @include focus-ring;
+  }
+
+  // ── Modifiers ──────────────────────────────────────────────────────────────
+
+  &--muted {
+    color: $color-muted;
+
+    &:hover {
+      color: $color-text;
+    }
+  }
+
+  &--plain {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

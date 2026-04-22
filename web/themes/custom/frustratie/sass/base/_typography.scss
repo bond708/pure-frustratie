@@ -1,0 +1,36 @@
+@use '../config' as *;
+@use 'sass:color';
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  font-weight: $font-weight-normal;
+  line-height: $line-height-base;
+  color: $color-text;
+}
+
+h1 { @include heading($font-size-4xl); }
+h2 { @include heading($font-size-3xl); }
+h3 { @include heading($font-size-2xl); }
+h4 { @include heading($font-size-xl); }
+h5 { @include heading($font-size-lg); }
+h6 { @include heading($font-size-base); }
+
+p {
+  margin-block-end: $spacing-4;
+}
+
+a {
+  color: $color-accent;
+  text-decoration: underline;
+  transition: color $transition-base;
+
+  &:hover,
+  &:focus {
+    color: color.adjust($color-accent, $lightness: -15%);
+  }
+
+  &:focus-visible {
+    @include focus-ring;
+  }
+}

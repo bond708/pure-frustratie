@@ -1,0 +1,5 @@
+// Centraal exportpunt voor variabelen en mixins.
+// Elk partial importeert dit via: @use '../config' as *
+
+@forward 'base/variables';
+@forward 'base/mixins';

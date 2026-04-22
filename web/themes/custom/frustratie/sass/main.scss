@@ -1,0 +1,26 @@
+// ─── Frustratie thema ─────────────────────────────────────────────────────────
+// Importvolgorde: base → atoms → molecules → organisms → templates → pages
+// Variabelen en mixins worden per partial geïmporteerd via _config.scss.
+
+// Base
+@use 'base/reset';
+@use 'base/typography';
+
+// Atoms
+@use 'atoms/button';
+@use 'atoms/link';
+@use 'atoms/input';
+
+// Molecules
+@use 'molecules/card';
+@use 'molecules/nav';
+
+// Organisms
+@use 'organisms/header';
+@use 'organisms/footer';
+
+// Templates
+@use 'templates/page';
+
+// Pages
+@use 'pages/home';

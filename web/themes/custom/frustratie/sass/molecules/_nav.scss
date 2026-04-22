@@ -1,0 +1,63 @@
+@use '../config' as *;
+
+// Molecule: nav
+// BEM: .nav, .nav__list, .nav__item, .nav__link
+// Modifier: .nav--primary, .nav--footer
+
+.nav {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-1;
+    align-items: center;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__link {
+    display: block;
+    padding: $spacing-2 $spacing-3;
+    font-size: $font-size-base;
+    font-weight: $font-weight-bold;
+    color: $color-primary;
+    text-decoration: none;
+    border-radius: $border-radius;
+    transition: background-color $transition-base, color $transition-base;
+
+    &:hover,
+    &:focus {
+      background-color: $color-secondary;
+      color: $color-accent;
+    }
+
+    &:focus-visible {
+      @include focus-ring;
+    }
+
+    &.is-active {
+      color: $color-accent;
+    }
+  }
+
+  // ── Modifiers ──────────────────────────────────────────────────────────────
+
+  &--footer {
+    .nav__list {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: $spacing-2;
+    }
+
+    .nav__link {
+      font-size: $font-size-sm;
+      font-weight: $font-weight-normal;
+      padding: 0;
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+}

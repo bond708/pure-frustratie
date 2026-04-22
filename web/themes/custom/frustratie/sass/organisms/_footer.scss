@@ -1,0 +1,45 @@
+@use '../config' as *;
+
+// Organism: footer
+// BEM: .footer, .footer__inner, .footer__nav, .footer__copy
+
+.footer {
+  background-color: $color-primary;
+  color: $color-secondary;
+  margin-block-start: $spacing-16;
+
+  // ── Elements ───────────────────────────────────────────────────────────────
+
+  &__inner {
+    @include container;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $spacing-8;
+    padding-block: $spacing-12;
+
+    @include respond-to('md') {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond-to('lg') {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__copy {
+    @include container;
+    padding-block: $spacing-4;
+    border-block-start: 1px solid rgba($color-white, 0.1);
+    font-size: $font-size-sm;
+    color: $color-muted;
+    text-align: center;
+  }
+
+  a {
+    color: $color-secondary;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+}

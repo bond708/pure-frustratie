@@ -1,0 +1,19 @@
+name: Frustratie
+type: theme
+description: 'Custom theme voor pure-frustratie.nl'
+package: Custom
+core_version_requirement: ^11
+base theme: false
+
+libraries:
+  - frustratie/global
+
+regions:
+  header: Header
+  primary_menu: 'Primair menu'
+  breadcrumb: Broodkruimel
+  highlighted: Highlighted
+  help: Help
+  content: Inhoud
+  sidebar: Zijbalk
+  footer: Footer
