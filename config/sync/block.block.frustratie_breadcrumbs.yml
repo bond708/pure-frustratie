@@ -1,0 +1,22 @@
+uuid: bbf17b99-0f57-4f2e-a807-e8f0ad14584c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - frustratie
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: frustratie_breadcrumbs
+theme: frustratie
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

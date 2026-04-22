@@ -1,0 +1,22 @@
+uuid: b2a87095-face-4bda-8a3f-c7be29cf174e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - frustratie
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: frustratie_powered
+theme: frustratie
+region: header
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

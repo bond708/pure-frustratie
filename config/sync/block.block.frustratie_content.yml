@@ -1,0 +1,22 @@
+uuid: ccbbd9b6-5c0c-450a-806d-01db09983b2a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - frustratie
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: frustratie_content
+theme: frustratie
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

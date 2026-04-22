@@ -1,0 +1,22 @@
+uuid: e734a3ce-92ee-40d8-b94f-bba35bd6627f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - frustratie
+_core:
+  default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
+id: frustratie_secondary_local_tasks
+theme: frustratie
+region: highlighted
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

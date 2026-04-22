@@ -1,0 +1,22 @@
+uuid: 6efb2719-50f4-477f-a72c-cdd38e7be4ec
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - frustratie
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: frustratie_help
+theme: frustratie
+region: header
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }
